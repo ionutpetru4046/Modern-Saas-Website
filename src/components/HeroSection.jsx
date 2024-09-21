@@ -1,4 +1,5 @@
 import { BRAND_LOGOS, HERO_CONTENT } from "../constants"
+import heroImage from "../assets/hero.jpg"
 
 const HeroSection = () => {
   return (
@@ -42,7 +43,7 @@ const HeroSection = () => {
             </div>
 
             <div className="mt-12 ">
-                
+                <img src={heroImage} />
             </div>
         </div>
     </section>
