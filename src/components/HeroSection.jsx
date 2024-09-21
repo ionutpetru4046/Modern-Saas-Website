@@ -25,6 +25,10 @@ const HeroSection = () => {
                 text-white py-3 px-6 rounded-lg font-medium">
                     {HERO_CONTENT.callToAction.primary}
                 </a>
+                <a href="#" className="inline-block border border-gray-500 hover:border-gray-400
+                text-white py-3 px-6 rounded-lg font-medium">
+                    {HERO_CONTENT.callToAction.secondary}
+                </a>
             </div>
         </div>
     </section>
