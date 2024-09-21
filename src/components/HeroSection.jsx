@@ -1,4 +1,4 @@
-import { HERO_CONTENT } from "../constants"
+import { BRAND_LOGOS, HERO_CONTENT } from "../constants"
 
 const HeroSection = () => {
   return (
@@ -29,6 +29,16 @@ const HeroSection = () => {
                 text-white py-3 px-6 rounded-lg font-medium">
                     {HERO_CONTENT.callToAction.secondary}
                 </a>
+            </div>
+            <div className="py-10 ">
+                <p className="text-gray-400 text-center mb-8">
+                    {HERO_CONTENT.trustedByText}
+                </p>
+                <div className="flex flex-wrap justify-center gap-8">
+                    {BRAND_LOGOS.map((logo, index) => (
+                        <img key={index} src={logo.src} />
+                    ))}
+                </div>
             </div>
         </div>
     </section>
