@@ -2,7 +2,7 @@ import { useState } from "react"
 import logo from "../assets/logo.png"
 import { RiCloseFill, RiMenu3Line } from "@remixicon/react"
 
-const NAvbar = () => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggleMenu = () => {
@@ -53,8 +53,13 @@ const NAvbar = () => {
                 </button>
             </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+            <div className=""></div>
+        )}
     </nav>
   )
 }
 
-export default NAvbar
+export default Navbar
