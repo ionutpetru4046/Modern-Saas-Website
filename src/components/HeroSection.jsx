@@ -36,9 +36,13 @@ const HeroSection = () => {
                 </p>
                 <div className="flex flex-wrap justify-center gap-8">
                     {BRAND_LOGOS.map((logo, index) => (
-                        <img key={index} src={logo.src} />
+                        <img key={index} src={logo.src} alt={logo.alt} className="h-8" />
                     ))}
                 </div>
+            </div>
+
+            <div className="mt-12 ">
+                
             </div>
         </div>
     </section>
