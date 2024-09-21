@@ -56,7 +56,23 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-            <div className=""></div>
+            <div className="md:hidden bg-neutral-900/60 backdrop-blur-md border 
+            border-neutral-800 p-4 rounded-xl mt-2">
+                <div className="flex flex-col space-y-4">
+                    <a href="#" className="hover:text-neutral-200">
+                        Product
+                    </a>
+                    <a href="#" className="hover:text-neutral-200">
+                        Pricing
+                    </a>
+                    <a href="#" className="hover:text-neutral-200">
+                        Resources
+                    </a>
+                    <a href="#" className="hover:text-white">
+                        Login
+                    </a>                    
+                </div>
+            </div>
         )}
     </nav>
   )
