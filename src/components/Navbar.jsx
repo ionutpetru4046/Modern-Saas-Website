@@ -28,6 +28,9 @@ const NAvbar = () => {
                     Testimonials
                 </a>
             </div>
+
+            {/* Right: Button (hidden on mobile) */}
+            <div className=""></div>
         </div>
     </nav>
   )
