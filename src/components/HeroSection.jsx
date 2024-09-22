@@ -43,7 +43,8 @@ const HeroSection = () => {
             </div>
 
             <div className="mt-12 ">
-                <img src={heroImage} />
+                <img src={heroImage} alt="Steamer Saas Interface" 
+                className="w-full h-auto rounded-3xl border border-neutral-800"/>
             </div>
         </div>
     </section>
