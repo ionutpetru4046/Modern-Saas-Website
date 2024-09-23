@@ -15,7 +15,10 @@ const Navbar = () => {
         mx-auto px-4 py-3 flex justify-between items-center rounded-xl border 
         border-neutral-800">
             {/* Left: Logo */}
-            <img src={logo} alt="logo" width={120} height={24} />
+
+            <a href="#">
+               <img src={logo} alt="logo" width={120} height={24} />
+            </a>
 
             {/* Center: Links (hidden on mobile) */}
             <div className="hidden md:flex space-x-6">
