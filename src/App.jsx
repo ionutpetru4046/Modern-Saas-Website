@@ -1,5 +1,6 @@
 import HeroSection from "./components/HEroSection"
 import HowItWorks from "./components/HowItWorks"
+import KeyFeatures from "./components/KeyFeatures"
 import Navbar from "./components/NAvbar"
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <HowItWorks />
+      <KeyFeatures />
     </main>
   )
 }
