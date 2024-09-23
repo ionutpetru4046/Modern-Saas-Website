@@ -1,4 +1,5 @@
 import HeroSection from "./components/HEroSection"
+import HowItWorks from "./components/HowItWorks"
 import Navbar from "./components/NAvbar"
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <main className="text-sm text-neutral-300 antialiased">
       <Navbar />
       <HeroSection />
+      <HowItWorks />
     </main>
   )
 }
