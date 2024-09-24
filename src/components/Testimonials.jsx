@@ -14,6 +14,7 @@ const Testimonials = () => {
             }
         })
     }
+    
   return (
     <section id="testimonial">
         <div className="max-w-7xl mx-auto px-4 mt-20">

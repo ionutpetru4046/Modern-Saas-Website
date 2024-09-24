@@ -14,6 +14,7 @@ const HowItWorks = () => {
             }
         })
     }
+    
   return (
     <section id="works">
         <div className="max-w-7xl mx-auto px-4">
