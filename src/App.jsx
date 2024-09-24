@@ -1,10 +1,10 @@
 import Footer from "./components/Footer"
-import HeroSection from "./components/HeroSection"
 import HowItWorks from "./components/HowItWorks"
 import KeyFeatures from "./components/KeyFeatures"
 import Navbar from "./components/NAvbar"
 import PricingPlans from "./components/PricingPlans"
 import Testimonials from "./components/Testimonials"
+import HeroSection from "./components/HeroSection"
 
 const App = () => {
   return (
