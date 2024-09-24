@@ -31,7 +31,8 @@ const PricingPlans = () => {
 
                 <motion.div 
                 initial="hidden"
-                whileInView={{
+                whileInView="visible"
+                variants={{
                     visible: {
                         transition: {
                             straggerChildren: 0.5,
