@@ -25,6 +25,46 @@ const Testimonials = () => {
                 to-neutral-600 bg-clip-text text-transparent">
                     {TESTIMONIALS_CONTENT.sectionTitle}
                 </h2>
+                <p className="mt-4">
+                    {TESTIMONIALS_CONTENT.sectionDescription}
+                </p>
+            </motion.div>
+
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            variants={{
+                visible: {
+                    transition: {
+                        straggerChildren: 0.2,
+                    }
+                }
+            }}            
+            className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {TESTIMONIALS_CONTENT.reviews.map((review, index) => (
+                    <motion.div key={index}
+                        custom={index}
+                        variants={testimonialVariants}
+                        className="mt-10 flex flex-col items-center justify-center overflow-hidden 
+                        rounded-2xl bg-neutral-900/50 border border-neutral-900 p-10">
+                            <p className="mb-4 text-neutral-200">
+                                {review.review}
+                            </p>
+                            <div className="flex items-center mt-4">
+                                <img src={review.image} 
+                                     alt={review.alt} 
+                                     className="w-12 h-12 rounded-full mr-4" />
+                                     <div>
+                                        <p className="text-sm font-bold text-white">
+                                            {review.name}
+                                        </p>
+                                        <p className="text-sm text-gray-500">
+                                            {review.title}
+                                        </p>
+                                     </div>
+                            </div>
+                    </motion.div>
+                ))}
             </motion.div>
         </div>
     </section>
