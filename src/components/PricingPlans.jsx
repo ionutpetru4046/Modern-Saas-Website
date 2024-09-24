@@ -44,15 +44,21 @@ const PricingPlans = () => {
                         <motion.div key={index} 
                         custom={index}
                         variants={childVariants}
-                        className={`p-8 rounded-xl shadow-lg bg-neutral-950 ${ plan.popular ? "border border-blue-900/80" : "border border-neutral-800" }`}> 
+                        className={`p-8 rounded-xl shadow-lg bg-neutral-950 
+                        ${ 
+                            plan.popular ? "border border-blue-900/80" : 
+                            "border border-neutral-800" 
+                            }`}> 
                             {plan.popular && (
                                 <div className="text-center mb-4">
-                                    <span className="bg-blue-600 text-white text-xs py-1 px-3 rounded-full uppercase">
+                                    <span className="bg-blue-600 text-white 
+                                    text-xs py-1 px-3 rounded-full 
+                                    uppercase">
                                         {PLANS_CONTENT.popularBadge}
                                     </span> 
                                 </div>
                             )}
-                            <h3 className="text-lg mb-4 lg:text-xl tracking-tighter uppercase">
+                            <h3 className="text-lg lg:text-xl mb-4 tracking-tighter uppercase">
                                 {plan.name}
                             </h3>
                             <p className="text-neutral-400 mb-6">
@@ -64,7 +70,7 @@ const PricingPlans = () => {
                             <ul className="mb-8 space-y-2 text-neutral-400">
                                 {plan.features.map((feature, i) => (
                                     <li key={i} className="flex items-center">
-                                        <span className="inline-block w-2 h-2 bg-neutral-600 rounded-full mr-2">
+                                        <span className="inline-block">
                                             {feature}
                                         </span>
                                     </li>
