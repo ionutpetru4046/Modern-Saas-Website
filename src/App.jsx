@@ -1,5 +1,5 @@
 import Footer from "./components/Footer"
-import HeroSection from "./components/HEroSection"
+import HeroSection from "./components/HeroSection"
 import HowItWorks from "./components/HowItWorks"
 import KeyFeatures from "./components/KeyFeatures"
 import Navbar from "./components/NAvbar"
